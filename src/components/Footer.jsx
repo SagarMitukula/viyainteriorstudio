@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   const IgIcon = () => (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -22,12 +24,18 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-copy">
-        © 2025 Viya Interior Studio · All rights reserved · Kukatpally, Hyderabad
+        © 2025 Viya Salon & Spa · All rights reserved · Kukatpally, Hyderabad
       </div>
-      <div className="footer-socials">
-        <a href="#" title="Instagram"><IgIcon /></a>
-        <a href="#" title="Facebook"><FbIcon /></a>
-        <a href="https://wa.me/919133111888" title="WhatsApp"><WaIcon /></a>
+      <div style={{ display: 'flex', gap: '2rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', fontSize: '0.75rem' }}>
+          <Link to="/stylists" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Stylists</Link>
+          <Link to="/pricing" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>Pricing</Link>
+        </div>
+        <div className="footer-socials">
+          <a href="#" title="Instagram"><IgIcon /></a>
+          <a href="#" title="Facebook"><FbIcon /></a>
+          <a href="https://wa.me/919133111888" title="WhatsApp"><WaIcon /></a>
+        </div>
       </div>
     </footer>
   );
