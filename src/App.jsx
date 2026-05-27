@@ -10,6 +10,7 @@ import StylistDetail from './components/StylistDetail';
 import Styles from './components/Styles';
 import Pricing from './components/Pricing';
 import Booking from './components/Booking';
+import Projects from './components/Projects';
 import './index.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/styles" element={<Styles />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
         <Footer />

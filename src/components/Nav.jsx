@@ -33,6 +33,7 @@ export default function Nav() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/stylists">Stylists</Link></li>
         <li><Link to="/styles">Styles</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/pricing">Pricing</Link></li>
         {user ? (
           <>
